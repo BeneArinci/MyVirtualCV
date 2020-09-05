@@ -1,0 +1,12 @@
+#welcome {
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  width: 500px;
+}
+p {
+  width: 600px;
+}
