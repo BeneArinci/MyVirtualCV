@@ -3,7 +3,7 @@ import React from 'react';
 function SoftSkills () {
   return (
     <div className="flex flex-wrap">
-    <article class="center mw5 mw6-ns br3 hidden ba 10 mv0">
+    <article class="center mw5 mw6-ns br3 hidden mv0">
       <h1 class="purple f3 bg br3 br--top black-100 mv0 pv3 ph3">Curiosity & Problem Solving</h1>
       <div class="pa3 bt b--black-10">
         <p class="f1 f5-ns lh-copy measure" style={{margin: "0px"}}>
@@ -14,7 +14,7 @@ function SoftSkills () {
         </p>
       </div>
     </article>
-    <article class="center mw5 mw6-ns br3 hidden ba 10 mv0">
+    <article class="center mw5 mw6-ns br3 hidden mv0">
       <h1 class="purple f3 bg br3 br--top black-100 mv0 pv3 ph3">Communication & Listening</h1>
       <div class="pa3 bt b--black-10">
         <p class="f1 f5-ns lh-copy measure" style={{margin: "0px"}}>
@@ -25,7 +25,7 @@ function SoftSkills () {
         </p>
       </div>
     </article>
-    <article class="center mw5 mw6-ns br3 hidden ba 10 mv4">
+    <article class="center mw5 mw6-ns br3 hidden mv4">
       <h1 class="purple f3 bg br3 br--top black-100 mv0 pv3 ph3">Empathy & Team Working</h1>
       <div class="pa3 bt b--black-10">
         <p class="f1 f5-ns lh-copy measure" style={{margin: "0px"}}>
@@ -36,7 +36,7 @@ function SoftSkills () {
         </p>
       </div>
     </article>
-    <article class="center mw5 mw6-ns br3 hidden ba 10 mv4">
+    <article class="center mw5 mw6-ns br3 hidden mv4">
       <h1 class="purple f3 bg br3 br--top black-100 mv0 pv3 ph3">Stakeholders Management</h1>
       <div class="pa3 bt b--black-10">
         <p class="f1 f5-ns lh-copy measure" style={{margin: "0px"}}>
