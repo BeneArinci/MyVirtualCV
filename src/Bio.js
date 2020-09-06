@@ -4,7 +4,7 @@ import './Bio.css';
 function Bio () {
   return (
     <div className="flex ma1 justify-around pa3">
-      <img className ="shadow-5 ma3" alt='profileimage' src="./assets/Bene.jpeg" width="350" height="350"/>
+      <img className ="shadow-5 ma3" alt='profileimage' src="./assets/images/Bene.jpeg" width="350" height="350"/>
        {/* eslint-disable-next-line */}
       <p className="bio f5 lh-copy" style={{display:"flex", margin:"auto", fontSize:"25px", width:"930px"}}>
 
