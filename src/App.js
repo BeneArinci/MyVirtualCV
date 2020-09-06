@@ -3,7 +3,9 @@ import './App.css';
 import WelcomeMessage from './WelcomeMessage';
 import NavigationBar from './NavigationBar'
 import Bio from './Bio.js'
-import TechSkills from './Skills'
+import TechSkills from './TechSkills'
+import SoftSkills from './SoftSkills'
+
 
 class App extends React.Component {
   render () {
@@ -12,7 +14,8 @@ class App extends React.Component {
         <NavigationBar />
         {/* <WelcomeMessage />
         <Bio /> */}
-        <TechSkills />
+        {/* <TechSkills /> */}
+        <SoftSkills />
       </div>
      )
   }
