@@ -1,0 +1,9 @@
+div {
+  position: relative;
+  align-content: flex-start;
+}
+.bio {
+  text-align: right;
+}
+
+
