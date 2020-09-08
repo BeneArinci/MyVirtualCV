@@ -4,10 +4,17 @@ import WelcomeMessage from './WelcomeMessage';
 import NavigationBar from './NavigationBar'
 import Bio from './Bio.js'
 import TechSkills from './TechSkills'
-import SoftSkills from './SoftSkills'
+import SoftSkill from './SoftSkill'
+import {softSkills} from './softSkills'
 
 
 class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      softSkills: softSkills
+    }
+  }
   render () {
      return(
       <div className="App">
@@ -15,7 +22,7 @@ class App extends React.Component {
         {/* <WelcomeMessage />
         <Bio /> */}
         {/* <TechSkills /> */}
-        <SoftSkills />
+        <SoftSkill softSkills={this.state.softSkills}/>
       </div>
      )
   }
