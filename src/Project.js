@@ -13,7 +13,7 @@ function Project ({imageURL, title, description, githubpage}) {
     <div className="f3 f5-ns lh-copy measure">
     <p className="f3 f5-ns lh-copy measure">
     {description} <br></br>
-    For more info visit: <href>{githubpage}</href>
+    For more info visit: <a href = {githubpage}>{githubpage}</a>
     </p > 
      
 
