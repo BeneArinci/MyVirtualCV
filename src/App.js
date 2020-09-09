@@ -17,9 +17,15 @@ class App extends React.Component {
     super()
     this.state = {
       softSkills: softSkills,
-      projects: projects
+      projects: projects,
+      route: 'homepage'
     }
   }
+
+  onRouteChange(route) {
+    this.setState({route: route})
+  }
+  
   render () {
      return(
       <div className="App">
