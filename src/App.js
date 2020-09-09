@@ -4,8 +4,9 @@ import WelcomeMessage from './WelcomeMessage';
 import NavigationBar from './NavigationBar'
 import Bio from './Bio.js'
 import TechSkills from './TechSkills'
-import SoftSkill from './SoftSkill'
+import softSkillsList from './SoftSkillsList'
 import {softSkills} from './softSkills'
+import SoftSkillsList from './SoftSkillsList';
 
 
 class App extends React.Component {
@@ -22,7 +23,7 @@ class App extends React.Component {
         {/* <WelcomeMessage />
         <Bio /> */}
         {/* <TechSkills /> */}
-        <SoftSkill softSkills={this.state.softSkills}/>
+        <SoftSkillsList softSkills={this.state.softSkills}/>
       </div>
      )
   }
