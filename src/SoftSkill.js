@@ -2,7 +2,6 @@ import React from 'react';
 
 function SoftSkill ({title, description}) {
   return (
-    <div className="flex flex-wrap">
     <article class="center mw5 mw6-ns br3 hidden mv0">
       <h1 class="purple f3 bg br3 br--top black-100 mv0 pv3 ph3">{title}</h1>
       <div class="pa3 bt b--black-10">
@@ -11,7 +10,6 @@ function SoftSkill ({title, description}) {
         </p>
       </div>
     </article>
-   </div>
   )
 }
 
