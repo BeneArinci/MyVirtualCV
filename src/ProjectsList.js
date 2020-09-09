@@ -11,6 +11,7 @@ function ProjectsList ({projects}) {
               imageURL = {project.imageURL}
               title = {project.title}
               description = {project.description}
+              githubpage = {project.githubpage}
             />
           )
         })
