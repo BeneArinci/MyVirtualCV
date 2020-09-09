@@ -20,7 +20,7 @@ export const projects = [
   {
     imageURL: "./assets/images/acebook.png",
     title: "Acebook",
-    description: "Group project I worked on during the bootcamp’s week 8 and 9. The aim was to create an app similar to FaceBook. Tech stack: Ruby on Rails, RSpec, Capybara, PostgreSQL, HTML5, CSS, Bootstrap, Rubocop, Travis.",
+    description: "Group project I worked on during the bootcamp’s weeks 8 and 9. The aim was to create an app similar to FaceBook. Tech stack: Ruby on Rails, RSpec, Capybara, PostgreSQL, HTML5, CSS, Bootstrap, Rubocop, Travis.",
     githubpage: "https://github.com/BeneArinci/Acebook"
   }
 ];

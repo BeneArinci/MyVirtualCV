@@ -9,6 +9,7 @@ import {softSkills} from './softSkills';
 import {projects} from './projects';
 import SoftSkillsList from './SoftSkillsList';
 import ProjectsList from './ProjectsList';
+import Scroll from './Scroll';
 
 
 class App extends React.Component {
@@ -27,7 +28,9 @@ class App extends React.Component {
         <Bio /> */}
         {/* <TechSkills /> */}
         {/* <SoftSkillsList softSkills={this.state.softSkills}/> */}
-        <ProjectsList projects = {this.state.projects} />
+        <Scroll>
+          <ProjectsList projects = {this.state.projects} />
+        </Scroll>  
       </div>
      )
   }

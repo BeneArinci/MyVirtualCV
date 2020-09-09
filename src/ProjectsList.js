@@ -3,7 +3,7 @@ import Project from './Project'
 
 function ProjectsList ({projects}) {
   return (
-    <div>
+    <div className="pa3">
       {
         projects.map((project) => {
           return(
