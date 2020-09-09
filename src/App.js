@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import WelcomeMessage from './WelcomeMessage';
-import NavigationBar from './NavigationBar'
-import Bio from './Bio.js'
-import TechSkills from './TechSkills'
-import softSkillsList from './SoftSkillsList'
-import {softSkills} from './softSkills'
+import NavigationBar from './NavigationBar';
+import Bio from './Bio.js';
+import TechSkills from './TechSkills';
+import softSkillsList from './SoftSkillsList';
+import {softSkills} from './softSkills';
 import SoftSkillsList from './SoftSkillsList';
+import Project from './Project';
 
 
 class App extends React.Component {
@@ -23,7 +24,8 @@ class App extends React.Component {
         {/* <WelcomeMessage />
         <Bio /> */}
         {/* <TechSkills /> */}
-        <SoftSkillsList softSkills={this.state.softSkills}/>
+        {/* <SoftSkillsList softSkills={this.state.softSkills}/> */}
+        <Project />
       </div>
      )
   }
