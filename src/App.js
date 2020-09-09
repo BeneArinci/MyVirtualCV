@@ -6,15 +6,17 @@ import Bio from './Bio.js';
 import TechSkills from './TechSkills';
 import softSkillsList from './SoftSkillsList';
 import {softSkills} from './softSkills';
+import {projects} from './projects';
 import SoftSkillsList from './SoftSkillsList';
-import Project from './Project';
+import ProjectsList from './ProjectsList';
 
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      softSkills: softSkills
+      softSkills: softSkills,
+      projects: projects
     }
   }
   render () {
@@ -25,7 +27,7 @@ class App extends React.Component {
         <Bio /> */}
         {/* <TechSkills /> */}
         {/* <SoftSkillsList softSkills={this.state.softSkills}/> */}
-        <Project />
+        <ProjectsList projects = {this.state.projects} />
       </div>
      )
   }
