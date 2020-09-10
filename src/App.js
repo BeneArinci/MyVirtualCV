@@ -18,25 +18,39 @@ class App extends React.Component {
     this.state = {
       softSkills: softSkills,
       projects: projects,
-      route: 'homepage'
+      route: ''
     }
   }
 
   onRouteChange(route) {
     this.setState({route: route})
   }
-  
+
   render () {
+     const {route} = this.state
      return(
       <div className="App">
-        <NavigationBar />
+        <NavigationBar onRouteChange = { this.onRouteChange }/>
+        { route === 'bio'
+          ? <Bio />
+          : route === 'techskills'
+          ? <TechSkills />
+          : route === 'softskills'
+          ? <SoftSkillsList softSkills={this.state.softSkills}/>
+          : route === 'projects' 
+          ?  <Scroll>
+              <ProjectsList projects = {this.state.projects} />
+            </Scroll>
+          : <WelcomeMessage />
+        }
+    
         {/* <WelcomeMessage />
-        <Bio /> */}
-        {/* <TechSkills /> */}
-        {/* <SoftSkillsList softSkills={this.state.softSkills}/> */}
+        <Bio />
+        <TechSkills />
+        <SoftSkillsList softSkills={this.state.softSkills}/>
         <Scroll>
           <ProjectsList projects = {this.state.projects} />
-        </Scroll>  
+        </Scroll>   */}
       </div>
      )
   }
