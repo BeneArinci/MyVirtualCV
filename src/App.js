@@ -17,7 +17,7 @@ class App extends React.Component {
     this.state = {
       softSkills: softSkills,
       projects: projects,
-      route: 'bio'
+      route: ''
     }
   }
 
