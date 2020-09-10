@@ -6,7 +6,7 @@ function Bio () {
     <div className="flex ma1 justify-around pa3">
       <img className ="shadow-5 ma3" alt='profileimage' src="./assets/images/Bene.jpeg" width="350" height="350"/>
        {/* eslint-disable-next-line */}
-      <p className="bio f5 lh-copy" style={{display:"flex", margin:"auto", fontSize:"larger", width:"930px"}}>
+      <p className="bio f5 lh-copy" style={{display:"flex", margin:"auto", fontSize:"larger", width:"900px"}}>
 
       I am an ordinary woman with an extraordinary passion for people. Always eager to learn and intrigued by finding the best solution to problems.
 Since I moved to London, 4 years ago, I have been working as a recruiter. I built my career from scratch, starting from zero experience and a basic level of English. I am so proud of it that I wanted to do it again 💪
