@@ -8,6 +8,7 @@ function ProjectsList ({projects}) {
         projects.map((project) => {
           return(
             <Project 
+              id = {project.id}
               imageURL = {project.imageURL}
               title = {project.title}
               description = {project.description}

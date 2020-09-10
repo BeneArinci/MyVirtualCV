@@ -8,6 +8,7 @@ function SoftSkillsList ({softSkills}) {
         softSkills.map((skill) => {
           return(
             <SoftSkill 
+              id = {skill.id}
               title = {skill.title}
               description = {skill.description}
             />

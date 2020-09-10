@@ -4,7 +4,6 @@ import WelcomeMessage from './WelcomeMessage';
 import NavigationBar from './NavigationBar';
 import Bio from './Bio.js';
 import TechSkills from './TechSkills';
-import softSkillsList from './SoftSkillsList';
 import {softSkills} from './softSkills';
 import {projects} from './projects';
 import SoftSkillsList from './SoftSkillsList';
@@ -18,16 +17,19 @@ class App extends React.Component {
     this.state = {
       softSkills: softSkills,
       projects: projects,
-      route: ''
+      route: 'bio'
     }
   }
 
-  onRouteChange(route) {
-    this.setState({route: route})
+onRouteChange = (route) => {
+  this.setState({route: route})
+    console.log(route)
   }
 
   render () {
+    
      const {route} = this.state
+     console.log(route)
      return(
       <div className="App">
         <NavigationBar onRouteChange = { this.onRouteChange }/>
