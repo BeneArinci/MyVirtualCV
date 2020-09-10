@@ -7,11 +7,12 @@ function SoftSkillsList ({softSkills}) {
       {
         softSkills.map((skill) => {
           return(
-            <SoftSkill 
-              id = {skill.id}
+            <div key = {skill.id}>
+              <SoftSkill 
               title = {skill.title}
               description = {skill.description}
             />
+            </div>
           )
         })
       }
