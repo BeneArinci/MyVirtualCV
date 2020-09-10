@@ -3,7 +3,7 @@ import SoftSkill from './SoftSkill'
 
 function SoftSkillsList ({softSkills}) {
   return (
-    <div className = "flex flex-wrap justify-center justify-around" >
+    <div className = "flex flex-wrap justify-center justify-around" style={{marginBottom:"50px"}}>
       {
         softSkills.map((skill) => {
           return(
