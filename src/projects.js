@@ -15,13 +15,20 @@ export const projects = [
   },
   {
     id: 3,
+    imageURL: "./assets/images/portfolio.png",
+    title: "MyPortfolio",
+    description: "Yes, this is the web-app you are looking at :) I developed it using React, JavaScript, JSX",
+    githubpage: "https://github.com/BeneArinci/MyVirtualCV"
+  },
+  {
+    id: 4,
     imageURL: "./assets/images/codequest.png",
     title: "CodeQuest()",
     description: "Platform game for children with the aim of helping them to develop problem solving skills and, possibly, bringing them closer to programming. This was my final group project, presented during the Makers’ Demo Day on July 31 2020. The app was developed using the following tech stack: JavaScript, React, Node.js, HTML5, CSS, Tachyons, Jest.",
     githubpage: "https://github.com/BeneArinci/CodeQuest"
   },
   {
-    id: 4,
+    id: 5,
     imageURL: "./assets/images/acebook.png",
     title: "Acebook",
     description: "Group project I worked on during the bootcamp’s weeks 8 and 9. The aim was to create an app similar to FaceBook. Tech stack: Ruby on Rails, RSpec, Capybara, PostgreSQL, HTML5, CSS, Bootstrap, Rubocop, Travis.",
