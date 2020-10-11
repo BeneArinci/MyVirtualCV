@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import WelcomeMessage from '../WelcomeMessage/WelcomeMessage';
 import NavigationBar from '../NavigationBar/NavigationBar';
-import Bio from '../../Bio/Bio';
+import Bio from '../Bio/Bio';
 import TechSkills from '../TechSkills/TechSkills';
 import {softSkills} from '../../softSkills';
 import {projects} from '../../projects';

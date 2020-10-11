@@ -7,6 +7,13 @@ export const projects = [
     githubpage: "https://github.com/BeneArinci/Party_Planning_Project"
   },
   {
+    id: 2,
+    imageURL: "./assets/images/credit-cards.png",
+    title: "Credit Cards",
+    description: "The aim of this app is to give the possibility to the user to insert their data and visualise a list of available credit cards (filtered based on the user input). I developed this web-app using React. I have developed this web application working both on its back-end and front-end. I used React (initiated from scratch) for the frontend and I linked it to an API server that I created using Express.",
+    githubpage: "https://github.com/BeneArinci/Credit_Cards"
+  },
+  {
     id: 3,
     imageURL: "./assets/images/bowling.png",
     title: "Bowling ScoreCard",
