@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-import WelcomeMessage from './WelcomeMessage';
-import NavigationBar from './NavigationBar';
-import Bio from './Bio.js';
-import TechSkills from './TechSkills';
-import {softSkills} from './softSkills';
-import {projects} from './projects';
-import SoftSkillsList from './SoftSkillsList';
-import ProjectsList from './ProjectsList';
-import Scroll from './Scroll';
-import Footer from './Footer';
+import WelcomeMessage from '../../WelcomeMessage/WelcomeMessage';
+import NavigationBar from '../../NavigationBar/NavigationBar';
+import Bio from '../../Bio/Bio';
+import TechSkills from '../../TechSkills/TechSkills';
+import {softSkills} from '../../softSkills';
+import {projects} from '../../projects';
+import SoftSkillsList from '../SoftSkillsList/SoftSkillsList';
+import ProjectsList from '../../ProjectsList/ProjectsList';
+import Scroll from '../../Scroll/Scroll';
+import Footer from '../../Footer/Footer';
 
 
 class App extends React.Component {

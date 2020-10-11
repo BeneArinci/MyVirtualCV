@@ -1,5 +1,5 @@
 import React from 'react';
-import SoftSkill from './SoftSkill'
+import SoftSkill from '../SoftSkill/SoftSkill'
 
 function SoftSkillsList ({softSkills}) {
   return (
