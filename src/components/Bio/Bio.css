@@ -1,9 +1,22 @@
-div {
+/* div {
   position: relative;
   align-content: flex-start;
-}
+} */
 .bio {
-  text-align: right;
+  text-align: center;
+  margin: auto;
+}
+
+.bio-container {
+  position:relative;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  
+}
+
+.picture {
+  position: relative;
+  margin-top: 60%;
 }
 
 
