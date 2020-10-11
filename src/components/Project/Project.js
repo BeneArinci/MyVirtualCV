@@ -10,10 +10,10 @@ function Project ({imageURL, title, description, githubpage}) {
         <h1 className="dark-green f5 pa3 f3-ns mv0 w-100">{title}</h1>
       </div>
     </div>
-    <div className="f5-ns lh-copy measure w-100">
-    <p className="f5-ns w-100 lh-copy measure">
+    <div className="lh-copy measure w-100 pa0">
+    <p className="f5-ns f7 w-100 lh-copy measure">
     {description} <br></br>
-    For more info visit: <a className="flex justify-center w-100 lh-copy measure" href = {githubpage}>{githubpage}</a>
+    For more info visit: <a className="flex justify-center w-100 lh-copy measure f5-ns f7" href = {githubpage}>{githubpage}</a>
     </p > 
      
 
