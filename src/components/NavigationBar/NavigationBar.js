@@ -4,7 +4,6 @@ import NavLink from '../NavLink/NavLink'
 
 function NavigationBar ({ navItems, onRouteChange }) {
   return (
-    // style= {{display:"flex", justifyContent:"flex-end", width:"70%", marginLeft:"auto"}}
        <div className="tr w-100" style={{display:"flex", justifyContent:"flex-end", width:"70%", marginLeft:"auto"}}>
         {
           navItems.map((link) => {
@@ -16,12 +15,10 @@ function NavigationBar ({ navItems, onRouteChange }) {
                   onRouteChange = {onRouteChange}
                 />
               </div>
-              
             )
           })
         }
       </div>
-  
   )
 }
 

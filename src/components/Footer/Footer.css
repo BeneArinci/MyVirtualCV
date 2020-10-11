@@ -15,7 +15,6 @@
 .githubIcon{
   max-width: 2em;
   height: auto;
-  /* margin-top: 12px; */
   margin-right: 1rem;
 }
 
@@ -23,7 +22,6 @@
   max-width: 2em;
   height: auto;
   margin-right: 0.5rem;
-  /* margin-top: 12px; */
 }
 
 .phone, .email {

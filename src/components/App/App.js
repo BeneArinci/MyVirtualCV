@@ -24,47 +24,29 @@ class App extends React.Component {
     }
   }
 
-onRouteChange = (route) => {
-  this.setState({route: route})
-  console.log(route)
-    console.log(this.state.route)
-  }
+  onRouteChange = (route) => {
+    this.setState({route: route})
+    console.log(route)
+      console.log(this.state.route)
+    }
 
   render () {
-    
-     const {route, projects, navItems} = this.state
-     console.log(this.state.route)
+     const {route, projects, navItems, softSkills} = this.state
      return(
       <div className="App">
         <NavigationBar navItems = {navItems} onRouteChange = { this.onRouteChange }/>
         { route === 'bio' && <Bio /> }
         { route === 'techskills' && <TechSkills /> }
-        { route === 'softskills' && <SoftSkillsList softSkills={this.state.softSkills}/> }
+        { route === 'softskills' && <SoftSkillsList softSkills={softSkills}/> }
         { route === 'projects' && 
             <Scroll>
               <ProjectsList projects = {projects} />
             </Scroll> }
         { route === 'homepage' && <WelcomeMessage /> }
-        <Footer />
-
-        {/* { route === 'bio'
-          ? <Bio />
-          : route === 'techskills'
-          ? <TechSkills />
-          : route === 'softskills'
-          ? <SoftSkillsList softSkills={this.state.softSkills}/>
-          : route === 'projects' 
-          ?  <Scroll>
-              <ProjectsList projects = {this.state.projects} />
-            </Scroll>
-          : <WelcomeMessage />
-        } */}
-        
+        <Footer />       
       </div>
      )
   }
-    
-
 }
 
 export default App;
