@@ -6,6 +6,7 @@ import Bio from '../Bio/Bio';
 import TechSkills from '../TechSkills/TechSkills';
 import {softSkills} from '../../softSkills';
 import {projects} from '../../projects';
+import {navItems} from '../../navItems'
 import SoftSkillsList from '../SoftSkillsList/SoftSkillsList';
 import ProjectsList from '../ProjectsList/ProjectsList';
 import Scroll from '../Scroll/Scroll';
@@ -18,28 +19,30 @@ class App extends React.Component {
     this.state = {
       softSkills: softSkills,
       projects: projects,
+      navItems: navItems,
       route: 'homepage'
     }
   }
 
 onRouteChange = (route) => {
   this.setState({route: route})
-    console.log(route)
+  console.log(route)
+    console.log(this.state.route)
   }
 
   render () {
     
-     const {route} = this.state
-     console.log(route)
+     const {route, projects, navItems} = this.state
+     console.log(this.state.route)
      return(
       <div className="App">
-        <NavigationBar onRouteChange = { this.onRouteChange }/>
+        <NavigationBar navItems = {navItems} onRouteChange = { this.onRouteChange }/>
         { route === 'bio' && <Bio /> }
         { route === 'techskills' && <TechSkills /> }
         { route === 'softskills' && <SoftSkillsList softSkills={this.state.softSkills}/> }
         { route === 'projects' && 
             <Scroll>
-              <ProjectsList projects = {this.state.projects} />
+              <ProjectsList projects = {projects} />
             </Scroll> }
         { route === 'homepage' && <WelcomeMessage /> }
         <Footer />

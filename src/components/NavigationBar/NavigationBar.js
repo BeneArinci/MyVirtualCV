@@ -1,20 +1,26 @@
 import React from 'react';
+import NavLink from '../NavLink/NavLink'
 
-function NavigationBar ({onRouteChange}) {
+
+function NavigationBar ({ navItems, onRouteChange }) {
   return (
-    
-       <nav className="tr w-100" style= {{display:"flex", justifyContent:"flex-end", width:"70%", marginLeft:"auto"}}>
-        <p className="f3-ns f5 link dim black underline pa3-ns pa1 pointer"
-        onClick={ () => onRouteChange("homepage") }>Home</p>
-        <p className="f3-ns f5 link dim black underline pa3-ns pa1 pointer"
-          onClick={ () => onRouteChange("bio") }>Bio</p>
-        <p className="f3-ns f5 link dim black underline pa3-ns pa1 pointer"
-          onClick={ () => onRouteChange("projects") }>Projects</p>
-        <p className="f3-ns f5 link dim black underline pa3-ns pa1 pointer"
-          onClick={ () => onRouteChange("techskills") }>Tech-Skills</p>
-        <p className="f3-ns f5 link dim black underline pa3-ns pa1 pointer"
-          onClick={ () => onRouteChange("softskills") }>Soft-Skills</p>
-      </nav>
+    // style= {{display:"flex", justifyContent:"flex-end", width:"70%", marginLeft:"auto"}}
+       <div className="tr w-100" style={{display:"flex", justifyContent:"flex-end", width:"70%", marginLeft:"auto"}}>
+        {
+          navItems.map((link) => {
+            return (
+              <div key={link.id}>
+                <NavLink
+                  name = {link.title}
+                  route = {link.route}
+                  onRouteChange = {onRouteChange}
+                />
+              </div>
+              
+            )
+          })
+        }
+      </div>
   
   )
 }
