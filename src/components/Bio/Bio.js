@@ -3,7 +3,7 @@ import './Bio.css';
 
 function Bio () {
   return (
-    <div className="bio-container flex flex-wrap justify-around pa2">
+    <div className="bio-container flex justify-center flex-wrap pa2">
       <img className ="picture shadow-5 ma3" alt='profileimage' src="./assets/images/Bene.jpeg" width="20%" height="30%"/>
        {/* eslint-disable-next-line */}
       <div className="bio f4-ns f4-m f3-l lh-copy" style={{display:"flex", margin:"auto", fontSize:"larger", width:"900px"}}>

@@ -10,13 +10,9 @@
 .bio-container {
   position:relative;
   margin-bottom: 3rem;
-  margin-top: 3rem;
-  
-}
-
-.picture {
-  position: relative;
-  margin-top: 60%;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 
